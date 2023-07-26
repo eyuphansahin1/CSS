@@ -1,0 +1,12 @@
+.yellow-border{
+    display: block;
+    width: 90px;
+    height: 10px;
+    margin-top: 5px;
+}
+.taxi{
+    background: url(taxi-260nw-196384103.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
