@@ -1,0 +1,479 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background:url(intro-bg.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    
+}
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.65);
+    opacity: 1;
+
+}
+.content{
+    margin-top: 70px;
+    text-align: center;
+    z-index: 1;
+}
+.content button{
+    color: #FFFFFF !important;
+    border-color: #cc005f;
+    height: 6rem !important;
+    line-height: 5.4rem !important;
+    padding: 0 3.5rem 0 3rem !important;
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    background: transparent;
+    transition: .6s;
+}
+.content button:hover{
+    opacity: 0.8;
+}
+.content button a{
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    color: #FFFFFF;
+    font-family: "poppins-bold", sans-serif;
+}
+
+.content p{
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+.content h5{
+    color: #cc005f;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 2.3rem;
+    line-height: 1.565;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+.content h1{
+    color: #FFFFFF;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 8.4rem;
+    line-height: 1.071;
+    max-width: 900px;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    font-family: "poppins-medium", sans-serif;
+}
+.social{
+    z-index: 2;
+    text-align: center;
+}
+.social i{
+    font-size: 3rem;
+    color: white;
+    margin: 0 1rem;
+}
+.social i:hover{
+    color: #cc005f;
+}
+
+
+#about-text{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#about-text h5{
+    color: #FF0077;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+}
+#about-text h1{
+    font-weight: bold;
+    font-size: 3.6rem;
+    color: #313131;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+}
+#picture{
+    width: 30%;
+}
+#picture-content{
+    width: 70%;
+    font-family: "lora-regular", serif;
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #888888;
+    display: flex;
+    align-items: center;
+}
+#picture-content p{
+    width: 80%;
+    font-size: 2.3rem;
+}
+#about{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+#picture img{
+    clip-path: circle(40% at 50% 50%);
+    width: 50%;
+}
+#picture {
+    text-align: right;
+}
+#skills-and-profile{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.rows2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+.row2 p{
+    width: 50%;
+}
+.rows2 h3{
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+.rows2 h5{
+    font-weight: bold;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.rows2 p{
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: #6e6e6e;
+    margin: 0;
+}
+.marginle{
+    margin-bottom: 1rem;
+    position: relative;
+}
+.marginle div{
+    background-color: #6e6e6e;
+    height: 5px;
+    width: 80%;
+}
+.marginle span{
+    position: absolute;
+    right: 10rem;
+    top: -1.6rem;
+    display: block;
+    font-family: "poppins-regular", sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1;
+    background: #313131;
+    padding: 0.6rem 0.6rem;
+    border-radius: 3px;
+    
+}
+.marginle span::after{
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #313131;
+    content: "";
+}
+
+.cv{
+    background-color: #313131;
+    text-align: center;
+    padding: 1rem;
+    width: 250px;
+    transition: 0.6s;
+    margin-bottom: 2rem;
+}
+.cv:hover{
+    border: 2px solid #cc005f;
+    background-color: #FFFFFF;
+}
+.cv:hover a{
+    color: #cc005f;
+}
+.cv a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+.marginle div div{
+    background-color: black;
+    height: 5px;
+}
+#skilss .marginle{
+    margin-bottom: 4rem;
+} 
+
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
+}
+.resimler{
+    height: 400px;
+    flex-grow: 1;
+    display: flex;
+    flex-basis: 450px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+ img{
+    width: 100%;
+    transition: transform .3s ease-in-out;
+    object-fit: cover;
+}
+.resimler img:hover{
+    transform: scale(1.2);
+}
+
+#footer {
+     background: #ebebeb;
+     padding:2rem;
+     color: black;
+     display: flex;
+    
+}
+#footer p{
+    font-size: 1.5rem;
+}
+.row3{
+    width: 33%;
+    text-align: center;
+}
+
+.row3 h5{
+    font-size: 1.4rem;
+    line-height: 1.714;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: #FF0077;
+}
+
+#footer i{
+    color: black;
+}
+@media only screen and (max-width:1200px) {
+    html{
+        font-size: 10px;
+    }
+    #picture img{
+        width: 60%;
+    }
+    #picture-content p{
+        width: 100%;
+        font-size: 2.3rem;
+    }
+}
+@media only screen and (max-width:1024px) {
+    html{
+        font-size: 9px;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #picture{
+        width: 100%;
+    }
+    #picture-content{
+        width: 100%;
+    }
+    #picture img{
+        width: 30%;
+    }
+    #picture {
+        text-align: center;
+    }
+    #picture-content p{
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    #skills-and-profile{
+        width: 100%;
+
+    }
+ 
+    
+}
+@media only screen and (max-width:768px) {
+    html{
+        font-size: 9px;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #picture{
+        width: 100%;
+    }
+    #picture-content{
+        width: 100%;
+    }
+    #picture img{
+        width: 40%;
+    }
+    #picture {
+        text-align: center;
+    }
+    #picture-content p{
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    #skills-and-profile{
+        flex-direction: column;
+        width: 100%;
+    }
+    .rows2{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .marginle div{
+        width: 100%
+    }
+    #skilss{
+        margin-top: 4rem;
+    }
+   
+}
+@media only screen and (max-width:600px) {
+	html{
+        font-size: 8px;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #picture{
+        width: 100%;
+    }
+    #picture-content{
+        width: 100%;
+    }
+    #picture {
+        text-align: center;
+    }
+    #picture-content p{
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    #skills-and-profile{
+        flex-direction: column;
+        width: 100%;
+    }
+    .rows2{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .marginle div{
+        width: 100%
+    }
+    #skilss{
+        margin-top: 4rem;
+    }
+    #footer{
+        flex-direction: column;
+    }
+    .row3{
+        width: 100%;
+    }
+ 
+}
+@media only screen and (max-width:400px) {
+    html{
+        font-size: 7px;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #picture{
+        width: 100%;
+    }
+    #picture-content{
+        width: 100%;
+    }
+    #picture {
+        text-align: center;
+    }
+    #picture-content p{
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    #skills-and-profile{
+        flex-direction: column;
+        width: 100%;
+    }
+    .rows2{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .marginle div{
+        width: 100%
+    }
+    #skilss{
+        margin-top: 4rem;
+    }
+    .resimler{
+        flex-basis: 250px;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
